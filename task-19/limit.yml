@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment
+  namespace: exam-davron
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: deployment
+  template:
+    metadata:
+      labels:
+        app: deployment
+    spec:
+      containers:
+        - name: repo-limit
+          image: davrontb/repo-2:v1
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "64Mi"
+            limits:
+              cpu: "200m"
+              memory: "128Mi"
+          env:
+            - name: CPU
+              valueFrom:
+                resourceFieldRef:
+                  containerName: your-container-name
+                  resource: requests.cpu
+            - name: MEMORY
+              valueFrom:
+                resourceFieldRef:
+                  containerName: your-container-name
+                  resource: requests.memory

@@ -1,0 +1,7 @@
+kubectl get pods  -l project=practice --all-namespaces
+
+default         nginx-test   1/1     Running   0          12d
+exam-davron     nginx1       1/1     Running   0          2m31s
+exam-davron     nginx2       1/1     Running   0          2m31s
+exam-kodirovr   nginx1       1/1     Running   0          4m5s
+exam-kodirovr   nginx2       1/1     Running   0          3m52s

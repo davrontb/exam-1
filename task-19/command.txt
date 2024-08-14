@@ -1,0 +1,2 @@
+kubectl apply -f task-19/limit.yml -n exam-davron
+deployment.apps/deployment configured

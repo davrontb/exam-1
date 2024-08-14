@@ -1,0 +1,12 @@
+kubectl apply -f task-4/flask-app.yml
+deployment.apps/flask-app created
+
+kubectl get pods -l app=flask-app -n exam-davron
+flask-app-687ff64756-pd9mj   1/1     Running   0          115s
+
+kubectl port-forward pod/flask-app-687ff64756-pd9mj  8080:5000 -n exam-davron
+Forwarding from 127.0.0.1:8080 -> 5000
+Forwarding from [::1]:8080 -> 5000
+
+curl http://localhost:8080
+{"env":"staging","http_port":"80","string":"Welcome to DevOps Course!"}

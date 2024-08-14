@@ -1,0 +1,4 @@
+kubectl apply -f task-12/deployment.yml -n exam-davron
+deployment.apps/repo-4 configured
+
+repo-4-55bdd8746c-2lck7         1/1     Running                      0          20s

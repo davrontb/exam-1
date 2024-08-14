@@ -1,0 +1,2 @@
+kubectl apply -f task-18/limit.yml -n exam-davron
+limitrange/cpu-limit-range created

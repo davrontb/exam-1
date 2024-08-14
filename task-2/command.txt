@@ -1,0 +1,1 @@
+kubectl apply -f task-2/nginx.yml -n exam-davron

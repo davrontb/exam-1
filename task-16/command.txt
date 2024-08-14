@@ -1,0 +1,5 @@
+kubectl get endpointslices -n exam-davron
+NAME                                  ADDRESSTYPE   PORTS   ENDPOINTS      AGE
+flask-app-service-9st6b               IPv4          5000    10.233.75.19   95m
+frontend-app-848596876d-ndnrx-27v76   IPv4          80      10.233.75.27   55m
+frontend-app-8xg47                    IPv4          80      10.233.75.27   53m

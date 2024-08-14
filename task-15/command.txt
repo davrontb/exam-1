@@ -1,0 +1,2 @@
+kubectl scale deployment repo-4 --replicas=3 -n exam-davron
+deployment.apps/repo-4 scaled

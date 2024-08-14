@@ -1,0 +1,20 @@
+kubectl describe endpointslice flask-app-service -n exam-davron
+Name:         flask-app-service-9st6b
+Namespace:    exam-davron
+Labels:       endpointslice.kubernetes.io/managed-by=endpointslice-controller.k8s.io
+              kubernetes.io/service-name=flask-app-service
+Annotations:  endpoints.kubernetes.io/last-change-trigger-time: 2024-08-14T14:45:12Z
+AddressType:  IPv4
+Ports:
+  Name     Port  Protocol
+  ----     ----  --------
+  <unset>  5000  TCP
+Endpoints:
+  - Addresses:  10.233.75.19
+    Conditions:
+      Ready:    true
+    Hostname:   <unset>
+    TargetRef:  Pod/flask-app-687ff64756-pd9mj
+    NodeName:   node2
+    Zone:       <unset>
+Events:         <none>

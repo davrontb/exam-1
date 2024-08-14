@@ -1,0 +1,3 @@
+kubectl apply -f task-21/cron.yml -n exam-davron
+
+cronjob.batch/ping created

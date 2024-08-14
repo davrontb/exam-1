@@ -1,0 +1,7 @@
+kubectl apply -f task-14/ingress.yml -n exam-davron
+ingress.networking.k8s.io/my-ingress created
+
+
+
+404 Not Found
+nginx

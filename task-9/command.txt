@@ -1,0 +1,9 @@
+kubectl expose deployment frontend-app --type=NodePort --name=frontend-app --port=80 --target-port=80 -n exam-davron
+service/frontend-app exposed
+
+kubectl get service frontend-app -n exam-davron
+NAME           TYPE       CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE
+frontend-app   NodePort   10.233.4.219   <none>        80:31741/TCP   10s
+
+ curl http://65.109.137.203:31741
+{"message":"Welcome to your Kubernetes Exam!"}
